@@ -4,8 +4,15 @@
     <img :src="product.imageURL" :alt="product.title">
     <p>{{product.description}}</p>
     <p>{{product.startPrice}} / {{product.upkeepPrice}}</p>
-    <div class="details-link">
-      <a href="#">More Details</a>
+    <div>
+      <router-link class="details-link" :product="product" :to="{
+      name: 'ProductPage',
+      params: {
+        product: product.title
+      }
+    }">
+             <p class="more-link">More Details</p>
+          </router-link>
     </div>
   </div>
 </template>
@@ -37,11 +44,11 @@ export default {
   p {
     margin: 2rem;
   }
-  .details-link{
+  .details-link {
     text-align: left;
     margin: 2rem;
   }
-  a {
+  .more-link {
     text-decoration: none;
     color: darkgreen;
     font-weight: bold;

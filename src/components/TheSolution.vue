@@ -30,9 +30,12 @@ export default {
     grid-column: 2 / span 3;
     margin-top: 2rem;
   }
+  h4{
+    color: #13478E;
+  }
   .step-box {
     width: 30%;
-    border: 2px solid darkgreen;
+    border: 2px solid #0D7B35;
     border-radius: 10px;
     text-align: center;
   }

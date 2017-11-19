@@ -1,6 +1,6 @@
 <template>
   <div id="TheStorePage">
-    <h2>Gardens</h2>
+    <h2>Tiny Farms</h2>
     <div class="store-container">
       <div v-for="garden in gardens" :key="garden.id">
         <StoreCard :product="garden"></StoreCard>

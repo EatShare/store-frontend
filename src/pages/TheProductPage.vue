@@ -9,12 +9,12 @@
 <script>
 export default {
   name: "TheProductPage",
-  props: [
+  props: {
     product: {
       type: Object,
       required: true
     }
-  ]
+  }
 }
 </script>
 <style scoped>
