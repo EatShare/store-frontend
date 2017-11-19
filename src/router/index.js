@@ -21,7 +21,7 @@ export default new Router({
     {
       path: '/:product',
       name: 'ProductPage',
-      component: TheProductPage
+      component: TheProductPage,
     }
   ]
 })

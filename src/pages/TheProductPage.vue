@@ -33,19 +33,36 @@
       </div>
     </div>
     <div class="tiny-farm-container">
-      
+      <div class="farm-model-container" v-for="model in modelArray" :key="model.title">
+        <ModelCard :information="model"></ModelCard>
+      </div>
     </div>
   </div>
 </template>
 <script>
+import ModelCard from '../components/ModelCard';
+
 export default {
   name: "TheProductPage",
-  // props: {
-  //   product: {
-  //     type: Object,
-  //     required: true
-  //   }
-  // }
+  components: {
+    ModelCard
+  },
+  data() {
+    return {
+      modelArray: [
+        {title: "Outdoor Greenhouse", description: "A portable greenhouse, brought to your house ready to grow. It can be parked anywhere you can provide it electricity and water.", imageURL: "../../static/long1.jpg",
+        sizeArray: [
+          {title: "Small", width: "", length: "", width: "", description: ""},
+          {title: "Large", width: "", length: "", width: "", description: ""},
+        ]},
+        {title: "Indoor Hydroponics", description: "A portable hydroponics cabinet. It can be installed anywhere in your home that has access to electricity.", imageURL: "../../static/08841afd5ab7cfc6dd965bb70873900f.jpg",
+        sizeArray: [
+          {title: "Small", width: "", length: "", height: "", description: ""},
+          {title: "Large", width: "", length: "", height: "", description: ""},
+        ]},
+      ]
+    }
+  }
 }
 </script>
 <style scoped>
@@ -58,6 +75,7 @@ export default {
     border-radius: 10px;
     box-shadow: 0 2px 4px 0 darkgrey;
     padding: .5rem;
+    min-width: 450px;
   }
   .plant-list {
     display: flex;
@@ -69,6 +87,17 @@ export default {
   }
   .plant-list img {
     width: 90%;
+    height: auto;
+  }
+  .tiny-farm-container {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    justify-items: center;
+  }
+  img {
+    width: 30vw;
     height: auto;
   }
 </style>

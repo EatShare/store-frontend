@@ -42,5 +42,6 @@ export default {
   }
   li {
     padding: 1rem;
+    color: #13478E;
   }
 </style>
