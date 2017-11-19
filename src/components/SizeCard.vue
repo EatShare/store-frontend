@@ -1,6 +1,10 @@
 <template>
   <div id="SizeCard">
     <h4>{{information.title}}</h4>
+    <p>
+      Width: {{information.width}}
+      Length: {{information.length}}
+    </p>
   </div>
 </template>
 <script>

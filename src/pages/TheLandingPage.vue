@@ -2,14 +2,18 @@
   <div id="TheLandingPage">
     <div class="hero-content">
       <div class="introduction-text">
-        <h3>You want to control the food you eat.</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <router-link class="store-link" :to="{ name: 'StorePage'}">Shop Tiny Farms</router-link>
+        <div>
+          <h3>You want to control the food you eat.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <!-- <router-link class="store-link" :to="{ name: 'StorePage'}">Shop Tiny Farms</router-link> -->
+        </div>
+        <a href="mailto:EMAILADDRESS"><button>Get in touch to learn more!</button></a>
       </div>
       <div>
           <img src="../../static/eat-share-logo.png" alt="EatShare">
       </div>
     </div>
+
       <!-- <TheSolution></TheSolution> -->
   </div>
 </template>
@@ -51,11 +55,24 @@ export default {
     width: 300px;
     hight: auto;
   }
+  .introduction-text {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+  }
   .store-link {
     text-decoration: none;
     font-weight: bold;
     color: #13478E;
     float: right;
     margin-right: 3rem;
+  }
+  button {
+    background-color: #0D7B35;
+    border-radius: 10px;
+    color:white;
+    /*width: 10rem;*/
+    font-size: 2rem;
+    padding: .5rem;
   }
 </style>

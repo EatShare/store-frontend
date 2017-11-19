@@ -50,12 +50,12 @@ export default {
   data() {
     return {
       modelArray: [
-        {title: "Outdoor Greenhouse", description: "A portable greenhouse, brought to your house ready to grow. It can be parked anywhere you can provide it electricity and water.", imageURL: "../../static/long1.jpg",
+        {title: "Outdoor Greenhouse", description: "A portable greenhouse, brought to your house ready to grow. It can be parked anywhere you can provide it electricity and water.", imageURL: "",
         sizeArray: [
           {title: "Small", width: "", length: "", width: "", description: ""},
           {title: "Large", width: "", length: "", width: "", description: ""},
         ]},
-        {title: "Indoor Hydroponics", description: "A portable hydroponics cabinet. It can be installed anywhere in your home that has access to electricity.", imageURL: "../../static/08841afd5ab7cfc6dd965bb70873900f.jpg",
+        {title: "Indoor Hydroponics", description: "A portable hydroponics cabinet. It can be installed anywhere in your home that has access to electricity.", imageURL: "",
         sizeArray: [
           {title: "Small", width: "", length: "", height: "", description: ""},
           {title: "Large", width: "", length: "", height: "", description: ""},
@@ -95,9 +95,5 @@ export default {
     grid-template-columns: 1fr 1fr;
     grid-gap: 2rem;
     justify-items: center;
-  }
-  img {
-    width: 30vw;
-    height: auto;
   }
 </style>

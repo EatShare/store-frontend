@@ -3,7 +3,7 @@
     <div>
       <H1>EatShare</H1>
     </div>
-    <div>
+    <!-- <div>
       <ul>
         <li>
           Who Are we?
@@ -15,7 +15,7 @@
           Get Involved
         </li>
       </ul>
-    </div>
+    </div> -->
   </div>
 </template>
 <script>
@@ -27,8 +27,8 @@ export default {
   #TheHeader {
     grid-column: 1 / span 6;
     grid-row: 1;
-    display: flex;
-    justify-content: space-around;
+    /*display: flex;
+    justify-content: space-around;*/
     max-height:100px;
   }
   h1{
